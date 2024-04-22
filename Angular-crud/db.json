@@ -1,0 +1,20 @@
+{
+  "persons": [
+    {
+      "id": "abf1",
+      "name": "Shubham swami",
+      "email": "shubhamswami@gmail.com",
+      "dob": "2009-12-28",
+      "avatar": "https://via.placeholder.com/150",
+      "country": "India"
+    },
+    {
+      "name": "Shubham Londhe",
+      "email": "shubhamlondhe63@gmail.com",
+      "dob": "2024-04-03",
+      "avatar": "https://via.placeholder.com/150",
+      "country": "india",
+      "id": "NFx9xCD"
+    }
+  ]
+}

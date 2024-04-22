@@ -1,0 +1,6 @@
+<input type="text" class="search"  placeholder="Search by name..." [(ngModel)]="searchQuery" (input)="filterPersons()">
+<div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let person of filteredPersons">
+        <app-card-view [person]="person" (editClicked)="editPerson($event)" (deleteClicked)="deletePerson($event)"></app-card-view>
+    </div>
+</div> 

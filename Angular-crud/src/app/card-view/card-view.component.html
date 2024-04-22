@@ -1,0 +1,10 @@
+<div *ngIf="person" class="card">
+  <img *ngIf="person.avatar" class="card-img-top" [src]="person.avatar" alt="Avatar">
+  <div class="card-body">
+    <h5 class="card-title"  (click)="editPerson()">{{ person.name }}</h5>
+    <p class="card-text">Email: {{ person.email }}</p>
+    <p class="card-text">Country: {{ person.country }}</p>
+    <p class="card-text">Age: {{ person.dob | age }}</p>
+    <button class="btn btn-danger" (click)="deletePerson(person.id)">Delete</button>
+  </div>
+</div>

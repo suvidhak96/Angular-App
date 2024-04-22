@@ -1,0 +1,36 @@
+<div class="card">
+  <div class="card-header">
+    <h5 class="card-title">{{ isEditMode ? 'Edit Person' : 'Add New Person' }}</h5>
+  </div>
+  <div class="card-body">
+    <form [formGroup]="personForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-control" formControlName="name" placeholder="Enter name">
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control" formControlName="email" placeholder="Enter email">
+      </div>
+      
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" class="form-control" formControlName="dob">
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="avatar">Avatar:</label>
+        <input type="file" id="avatar" class="form-control-file" formControlName="avatar" (change)="onFileSelected($event)">
+        <img *ngIf="personForm.get('avatar')?.value" [src]="personForm.get('avatar')?.value" class="img-thumbnail mt-2" style="max-width: 150px;">
+      </div> -->
+      
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <input type="text" id="country" class="form-control" formControlName="country" placeholder="Enter country">
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-2">Save</button>
+    </form>
+  </div>
+</div>
